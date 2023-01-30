@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 990px;
+}
+
+
+/*---------------------HEADER-----------------*/
+body{
+    background-image: url(IMAGENS/banner.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.headername{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 230px;
+    border-radius:20px 20px 0px 0px;
+}
+
+.headername h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.headername p{
+    color: white;
+    font-size: 20px;
+}
+
+/*---------------------SECTION-----------------*/
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem {
+    background-color: rgba(255, 255, 255, 0.432);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 10px 1px  rgba(0, 0, 0, 0.308);
+}
+.title {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.box {
+    display: flex;
+}
+
+.box p{
+    display: none;
+}
+.box1, .box2, .box3 {
+    border: 3px solid black;
+    border-radius: 7px;
+    height: 300px;
+    width: 300px;
+    margin: 15px 10px 15px 10px;
+}
+
+.box1 {
+    background-image: url(IMAGENS/box1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box2 {
+    background-image: url(IMAGENS/box2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box3 {
+    background-image: url(IMAGENS/box3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.biografia {
+    background-color: white;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxbiografia {
+    padding: 10px 20px 20px 20px;
+    border: 2px solid black;
+    width: 800px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+
+}
+.boxbiografia h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+
+}
+
+.boxbiografia p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.titlelist{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.list ul {
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer p {
+    color: white;
+    font-size: 16px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*--------------------------SECTION------------------------------*/
+
+@media (max-width: 667px) {
+
+    .container {
+        max-width: 667px;
+    }
+
+   header {
+        display: flex;
+   }
+
+    .headername {
+        width: 667px;
+        height: 200px;
+        border-radius: 0px;
+    }
+
+    .headername h2 {
+        font-size: 20px;
+    }
+    .headername p{
+        font-size: 16px;
+        width: 500px;
+    }
+
+    body {
+        max-width: 667px;
+    }
+    .imagem {
+        height: 900px;
+    }
+   .imagem h1 {
+        font-size: 25px;
+   }
+
+   .box {
+        display: flex;
+        flex-direction: column;
+   }
+   .box p {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        padding: 10px 0px 5px 15px;
+        
+   }
+   .box1, .box2, .box3 {
+        border: 1px solid black;
+        border-radius: 7px;
+        height: 210px;
+        width: 300px;
+        margin: 15px 10px 15px 10px;
+    }
+    .title {
+        font-size: 25px;
+    }
+
+    .boxbiografia{
+        max-width: 550px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (min-width: 667px) and (max-width: 990px) {
+    .container {
+        max-width: 700px;
+    }
+
+   header {
+        display: flex;
+   }
+
+    .headername {
+        height: 200px;
+        border-radius: 0px;
+    }
+
+    .headername h2 {
+        font-size: 20px;
+    }
+    .headername p{
+        font-size: 16px;
+        width: 500px;
+    }
+
+    body {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagem {
+        height: 900px;
+    }
+   .imagem h1 {
+        font-size: 25px;
+   }
+
+   .box {
+        display: flex;
+        flex-direction: column;
+   }
+   .box p {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        padding: 10px 0px 5px 15px;
+        
+   }
+   .box1, .box2, .box3 {
+        border: 1px solid black;
+        border-radius: 7px;
+        height: 210px;
+        width: 300px;
+        margin: 15px 10px 15px 10px;
+    }
+    .title {
+        font-size: 25px;
+    }
+
+    .boxbiografia{
+        max-width: 550px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+}
+
