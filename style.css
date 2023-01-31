@@ -170,8 +170,87 @@ footer{
 
 
 /*--------------------------MEDIA QUERIES------------------------------*/
+@media (min-width: 320px) and (max-width: 600px) {
+    .container {
+        max-width: 320px;
+    }
 
-@media (max-width: 668px) {
+   header {
+        display: flex;
+        flex-direction: column;
+   }
+
+    .headername {
+        width: 100vw;
+        height: 150px;
+        border-radius: 0px;
+    }
+
+    .headername h2 {
+        font-size: 20px;
+    }
+    .headername p{
+        font-size: 13px;
+        width: 300px;
+    }
+
+    body {
+        max-width: 320px;
+    }
+    .imagem {
+        height: 900px;
+       
+    }
+   .imagem h1 {
+        font-size: 20px;
+   }
+
+   .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+   .box p {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        padding: 10px 0px 5px 15px;
+        display: block;
+        
+   }
+   .box1, .box2, .box3 {
+        border: 1px solid black;
+        border-radius: 7px;
+        height: 210px;
+        width: 200px;
+        margin: 15px 10px 15px 10px;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .biografia{
+        height: 1350px;
+    }
+
+    .boxbiografia{
+        width: 300px;
+    }
+    .footer {
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .footer p {
+        font-size: 8px;
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+}
+
+
+
+@media (min-width: 601px) and (max-width: 668px) {
 
     .container {
         max-width: 600px;
@@ -229,7 +308,7 @@ footer{
         font-size: 25px;
     }
     .biografia{
-        height: 1110px;
+        height: 1250px;
     }
 
     .boxbiografia{
@@ -251,6 +330,12 @@ footer{
     .container {
         max-width: 700px;
     }
+    body {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
    header {
         display: flex;
@@ -265,16 +350,11 @@ footer{
         font-size: 20px;
     }
     .headername p{
+        
         font-size: 16px;
         width: 500px;
     }
 
-    body {
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .imagem {
         height: 900px;
     }
@@ -291,6 +371,7 @@ footer{
         font-weight: bold;
         color: rgb(0, 0, 0);
         padding: 10px 0px 5px 15px;
+        display: block;
         
    }
    .box1, .box2, .box3 {
@@ -303,9 +384,11 @@ footer{
     .title {
         font-size: 25px;
     }
-
+    .biografia {
+        height: 1200px;
+    }
     .boxbiografia{
-        max-width: 550px;
+        max-width: 400px;
     }
 
     .footer p {
