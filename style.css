@@ -173,15 +173,26 @@ footer{
 @media (min-width: 320px) and (max-width: 600px) {
     .container {
         max-width: 320px;
+        
     }
 
-   header {
+    header {
         display: flex;
         flex-direction: column;
-   }
+    }
+    
+    #banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body {
+    width: 100vw;
+    }
 
     .headername {
-        width: 100vw;
+        width: 320px;
         height: 150px;
         border-radius: 0px;
     }
@@ -194,12 +205,10 @@ footer{
         width: 300px;
     }
 
-    body {
-        max-width: 320px;
-    }
+    
     .imagem {
         height: 900px;
-       
+        
     }
    .imagem h1 {
         font-size: 20px;
